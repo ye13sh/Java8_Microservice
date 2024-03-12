@@ -1,7 +1,7 @@
 package com.ye13sh.CartService.Model;
 
 import javax.persistence.*;
-
+//
 @Entity
 @Table(name = "Cart")
 public class Cart {

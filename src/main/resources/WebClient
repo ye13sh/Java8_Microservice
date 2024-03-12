@@ -7,6 +7,11 @@
 //                    .block(); // Blocking for simplicity in this example
 
 
+
+
+
+
+
 //   public void cartBuyOrder() { //asynchronous
 //    // ... (same initial code) ...
 //
@@ -15,12 +20,14 @@
 //
 //        for (Cart cart : cartList) {
 //            // ... (prepare DTO) ...
+
+// Mono<ClientResponse> responseMono -> .toEntity() / Mono<String> responseMono -> .bodyToMono()
 //
-//            webClient.post()
+//   Mono<ClientResponse> responseMono = webClient.post()
 //                .uri(cartOrderURL)
 //                .bodyValue(dto)
 //                .retrieve()
-//                .toEntity(String.class)
+//                .toEntity(String.class) / .bodyToMono(String.class)
 //                .subscribe(
 //                    response -> {
 //                        String responseBody = response.getBody();
