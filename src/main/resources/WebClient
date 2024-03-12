@@ -1,0 +1,43 @@
+//         synchronous           webClient
+//                            .post()
+//                            .uri(cartOrderURL)
+//                    .bodyValue(dto)
+//                    .retrieve()
+//                    .toEntity(String.class)
+//                    .block(); // Blocking for simplicity in this example
+
+
+
+
+
+
+// Mono<ClientResponse> responseMono -> .toEntity() / Mono<String> responseMono -> .bodyToMono()
+
+//   public void cartBuyOrder() { //asynchronous
+//    // ... (same initial code) ...
+//
+//    if (!cartList.isEmpty()) {
+//        WebClient webClient = WebClient.create();
+//
+//        for (Cart cart : cartList) {
+//            // ... (prepare DTO) ...
+//
+//            webClient.post()
+//                .uri(cartOrderURL)
+//                .bodyValue(dto)
+//                .retrieve()
+//                .toEntity(String.class)
+//                .subscribe(
+//                    response -> {
+//                        String responseBody = response.getBody();
+//                        // Process successful response (e.g., order confirmation)
+//                        log.info("Order placed successfully. Response: " + responseBody);
+//                    },
+//                    error -> {
+//                        log.error("Error placing cart order:", error);
+//                        // Handle error (e.g., retry or inform user)
+//                    }
+//                );
+//        }
+//    }
+//}
