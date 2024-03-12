@@ -1,7 +1,6 @@
 package com.ye13sh.OrderService.DTO;
 
 import java.time.LocalDateTime;
-
 public class CommonDTO {
     private String productName;
     private int quantity;

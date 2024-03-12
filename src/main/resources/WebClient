@@ -7,10 +7,6 @@
 //                    .block(); // Blocking for simplicity in this example
 
 
-
-
-
-
 // Mono<ClientResponse> responseMono -> .toEntity() / Mono<String> responseMono -> .bodyToMono()
 
 //   public void cartBuyOrder() { //asynchronous

@@ -3,6 +3,7 @@ package com.ye13sh.OrderService.Model;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+
 @Entity
 @Table(name = "orders")
 public class Order {
